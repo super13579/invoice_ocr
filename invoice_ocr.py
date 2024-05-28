@@ -21,7 +21,7 @@ ocr = PaddleOCR(lang='chinese_cht')
 convert_dpi = 800
 
 def seven_fetch(pdf_path):
-    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path=r'C:\PDF_fetch\poppler-24.02.0\Library\bin')
+    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path='./poppler-24.02.0/Library/bin')
     imgs[0].save("./out.png")
     input_img = cv2.imread("./out.png")
     img = CropImage(input_img)
@@ -51,7 +51,7 @@ def seven_fetch(pdf_path):
     # print(target_txt_2)
 
 def family_fetch(pdf_path):
-    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path=r'C:\PDF_fetch\poppler-24.02.0\Library\bin')
+    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path='./poppler-24.02.0/Library/bin')
     imgs[0].save("./out.png")
     input_img = cv2.imread("./out.png")
     # input_img = cv2.imread(df_Family.iloc[3].Path)
@@ -68,7 +68,7 @@ def family_fetch(pdf_path):
     return Target
 
 def OK_fetch(pdf_path):
-    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path=r'C:\PDF_fetch\poppler-24.02.0\Library\bin')
+    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path='./poppler-24.02.0/Library/bin')
     imgs[0].save("./out.png")
 
     input_img = cv2.imread("./out.png")
@@ -84,7 +84,7 @@ def OK_fetch(pdf_path):
     # print(result.text)
 
 def hilife_fetch(pdf_path):
-    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path=r'C:\PDF_fetch\poppler-24.02.0\Library\bin')
+    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path='./poppler-24.02.0/Library/bin')
     imgs[0].save("./out.png")
 
     input_img = cv2.imread("./out.png")
@@ -108,7 +108,7 @@ def hilife_fetch(pdf_path):
     return Target
 
 def shopee_fetch(pdf_path):
-    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path=r'C:\PDF_fetch\poppler-24.02.0\Library\bin')
+    imgs = convert_from_path(pdf_path, dpi=convert_dpi, poppler_path='./poppler-24.02.0/Library/bin')
     imgs[0].save("./out.png")
 
     input_img = cv2.imread("./out.png")
