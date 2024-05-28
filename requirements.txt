@@ -1,0 +1,4 @@
+paddleocr==2.7.3
+paddlepaddle==2.6.1
+pdf2image==1.17.0
+zxing-cpp==2.2.0
